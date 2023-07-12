@@ -1,0 +1,96 @@
+.footer{
+  background: #F0F3F7;
+  padding-block: 80px;
+  margin-top: 150px;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__socials{
+    margin-top: 20px;
+  }
+  &__social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    &:not(:first-child){
+      margin-left: 10px;
+    }
+  }
+  &__confidence{
+    margin-top: 30px;
+    opacity: .5;
+    cursor: pointer;
+    color: $main;
+    font-family: "Inter";
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: underline;
+  }
+  &__development{
+    opacity: .5;
+    margin-top: 10px;
+    a{
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+  &__copyright{
+    margin-top: 10px;
+    opacity: .5;
+  }
+  &__middle{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list{
+    max-width: 249px;
+    &:not(:first-child){
+      margin-left: 70px;
+    }
+  }
+  &__item{
+    &:not(:first-child){
+      margin-top: 15px;
+    }
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 25px;
+    display: inline-flex;
+    opacity: .5;
+    font-weight: 400;
+    &_big{
+      opacity: 1;
+      font-weight: 500;
+    }
+  }
+  &__tel{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  &__address{
+    margin-top: 25px;
+    opacity: .5;
+  }
+  &__mail{
+    margin-top: 15px;
+    display: inline-flex;
+    opacity: .5;
+  }
+  &__schedule{
+    opacity: .5;
+    margin-top: 15px;
+  }
+  &__btn{
+    margin-top: 30px;
+    min-width: 275px;
+  }
+}

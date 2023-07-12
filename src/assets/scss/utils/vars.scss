@@ -1,7 +1,16 @@
 //Colors
+$main:#092E47;
+$light-main:#a9b6bf;
+$white:#ffffff;
+
+$blue:#0F64DA;
+$hover:rgba(15, 100, 218, 0.8);
+
+//Vars
+$opacity:0.3499999940395355;
 
 //Screens
-$laptop: '';
+$laptop: 'max-width:900px';
 $tablet: '';
 $mobile: '';
 $mobile-mini: '';

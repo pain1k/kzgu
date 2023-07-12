@@ -1,0 +1,7 @@
+@mixin body-text($color:$main,$fw:600){
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: $fw;
+  color: $color;
+}

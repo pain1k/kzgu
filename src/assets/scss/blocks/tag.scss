@@ -1,0 +1,11 @@
+.tag{
+  padding: 5px 15px;
+  border-radius: 15px;
+  background: $white;
+  color: $main;
+  font-size: 14px;
+  line-height: 20px;
+  &_green{
+    color: #44DA0F;
+  }
+}

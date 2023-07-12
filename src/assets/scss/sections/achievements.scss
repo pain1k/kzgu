@@ -1,0 +1,117 @@
+.achievements{
+  &__top{
+    background: $blue;
+    color: $white;
+    padding-block: 150px;
+  }
+  &__wrapper{
+    display: flex;
+    margin-top: 40px;
+  }
+  &__left{
+    width: 100%;
+  }
+  &__right{
+    width: 100%;
+    max-width: 513px;
+    padding-left: 60px;
+  }
+  &__indicators{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__indicator{
+    padding-bottom: 15px;
+    border-bottom: 1px solid $white;
+    width: 100%;
+    max-width: calc(33.33% - 27px);
+    &:not(:last-child){
+      margin-right: 40px;
+    }
+  }
+  &__qnt{
+    font-size: 48px;
+    line-height: 55px;
+  }
+  &__name{
+    margin-top: 5px;
+  }
+  &__video-wrapper{
+    padding-top: 30px;
+    margin-top: 25px;
+    border-top: 1px solid $white;
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    &+.achievements__text{
+      margin-top: 20px;
+    }
+  }
+  &__video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    background-image: url("../../static/img/video.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  &__info{
+    max-width: 190px;
+    margin-left: 30px;
+  }
+  &__bottom{
+    background-image: url("../../static/img/achievements-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 149px;
+  }
+  &__container{
+    display: flex;
+  }
+  &__top-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content{
+    opacity: 0;
+    transition: .3s all;
+    &:first-of-type{
+      margin-top: auto;
+    }
+    &+.achievements__content{
+      margin-top: 20px;
+    }
+  }
+  &__uptitle{
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 600;
+  }
+  &__item{
+    background-color: transparent;
+    transition: .3s all;
+    cursor: pointer;
+    padding: 25px 30px;
+    border: 1px solid $white;
+    display: flex;
+    flex-direction: column;
+    min-height: 502px;
+    color: $white;
+    &:hover{
+      background-color: $blue;
+      border-color: transparent;
+      .achievements__content{
+        opacity: 1;
+      }
+    }
+  }
+}

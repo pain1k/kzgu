@@ -1,0 +1,32 @@
+.seo{
+  &__text{
+    margin-top: 40px;
+    position: relative;
+    overflow : hidden;
+    display : -webkit-box;
+    -webkit-box-orient : vertical;
+    -webkit-line-clamp : 3;
+    max-height:75px;
+    transition: .3s all;
+    &_full{
+      -webkit-line-clamp: unset;
+      max-height: unset;
+    }
+  }
+  &__overlay{
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0), rgba(255, 255, 255, .6) 50%, rgba(255, 255, 255, 1) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    &_hidden{
+      opacity: 0;
+    }
+  }
+  &__link{
+    margin-top: 15px;
+    cursor: pointer;
+  }
+}

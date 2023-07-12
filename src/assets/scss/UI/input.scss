@@ -1,0 +1,22 @@
+.input{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #C8D3E2;
+  color: $main;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Inter";
+  cursor:pointer;
+  padding: 15px 20px;
+  transition: .3s all;
+  &::placeholder{
+    color: $main;
+    opacity: $opacity;
+  }
+  &:hover{
+    background-color: $white;
+    color: $main;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,39 @@
+.audience-item{
+  border-radius: 50%;
+  border: 1px solid #E1E8FB;
+  width: 380px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $white;
+  transition: .3s all;
+  cursor: pointer;
+  &__number{
+    opacity: $opacity;
+    margin-top: 20px;
+  }
+  &__image{
+    width: 60px;
+    height: 60px;
+    margin-top: 78px;
+  }
+  &__name{
+    margin-top: 15px;
+    max-width: 180px;
+    text-align: center;
+  }
+  &:hover{
+    background: $blue;
+    .audience-item__image{
+      filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(52deg) brightness(112%) contrast(112%);
+    }
+    .audience-item__number{
+      opacity: .75;
+      color: $white;
+    }
+    .audience-item__name{
+      color: $white;
+    }
+  }
+}
