@@ -13,16 +13,6 @@
   &__socials{
     margin-top: 20px;
   }
-  &__social{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    &:not(:first-child){
-      margin-left: 10px;
-    }
-  }
   &__confidence{
     margin-top: 30px;
     opacity: .5;
@@ -70,11 +60,6 @@
       opacity: 1;
       font-weight: 500;
     }
-  }
-  &__tel{
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 600;
   }
   &__address{
     margin-top: 25px;

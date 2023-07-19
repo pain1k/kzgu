@@ -1,0 +1,13 @@
+.social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    &:not(:first-child){
+      margin-left: 10px;
+    }
+    &:hover{
+      opacity: .7;
+    }
+  }

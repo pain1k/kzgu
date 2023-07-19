@@ -1,0 +1,36 @@
+.header{
+  &__block{
+    border-bottom: 1px solid #E1E8FB;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__search-container{
+    width: 100%;
+    max-width: 478px;
+  }
+  &__address{
+    position: relative;
+    font-weight: 500;
+    &:before{
+      content: url("../../static/img/map-pin.png");
+      position: absolute;
+      left: -27px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 17px;
+    }
+  }
+  &__btn{
+    min-width: 254px;
+  }
+}

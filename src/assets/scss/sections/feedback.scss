@@ -37,5 +37,9 @@
     line-height: 25px;
     text-decoration: underline;
     cursor: pointer;
+    background: transparent;
+    &:hover{
+      opacity: 1;
+    }
   }
 }
