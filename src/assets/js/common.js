@@ -20,6 +20,16 @@ $(document).ready(function(){
         $tab.addClass('main__content_show')
     })
 
+    $('.catalogue-detail__switcher').on('click', function(e){
+        e.preventDefault();
+        $('.catalogue-detail__switcher').removeClass('catalogue-detail__switcher_active')
+        $(this).addClass('catalogue-detail__switcher_active')
+
+        $(this).hasClass('catalogue-detail__switcher-tile') ?
+            $('.catalogue-detail__list').addClass('list_tile') :
+            $('.catalogue-detail__list').removeClass('list_tile')
+    })
+
     $('.js-type-phone').on('input', function(e){
         let $target = $(e.target),
             regexp = /[^+()\-0-9 ]+/g;

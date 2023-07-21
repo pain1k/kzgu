@@ -1,0 +1,23 @@
+.tabs{
+  padding: 20px;
+  border: 1px solid #E1E8FB;
+  &__wrapper{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__link{
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: $blue;
+    transition: .3s all;
+    &:not(:first-child){
+      margin-left: 15px;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}

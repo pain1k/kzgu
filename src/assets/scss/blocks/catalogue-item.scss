@@ -1,0 +1,34 @@
+.catalogue-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F0F3F7;
+  min-height: 365px;
+  position: relative;
+  &__image{
+    max-height: 240px;
+    max-width: 100%;
+  }
+  &__description{
+    font-size: 22px;
+    line-height: 30px;
+    color: $main;
+    transition: .3s all;
+    font-weight: 400;
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+  }
+  &__tag{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &:hover{
+    background: #E6ECF3;
+    .catalogue-item__description{
+      color: $blue;
+    }
+  }
+}

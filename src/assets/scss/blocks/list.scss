@@ -1,0 +1,92 @@
+.list{
+  &__head{
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: $white;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    background-color: #F0F3F7;
+    padding: 15px;
+    justify-content: space-between;
+    &:hover{
+      background-color: #E6ECF3;
+      .list__engine a{
+        color: $blue;
+      }
+    }
+  }
+  &__engine{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    a{
+      display: inline-flex;
+    }
+  }
+  &__image{
+    max-height: 50px;
+    margin-right: 21px;
+  }
+  &__max-power{
+    max-width: 85px;
+    width: 100%;
+  }
+  &__rated-power{
+    width: 100%;
+    max-width: 85px;
+  }
+  &__phase-number{
+    width: 100%;
+    max-width: 75px;
+  }
+  &__volume{
+    width: 100%;
+    max-width: 55px;
+  }
+  &__availability{
+    max-width: 102px;
+    width: 100%;
+  }
+  &__btn{
+    width: 100%;
+    max-width: 100px;
+    color: $blue;
+    cursor: pointer;
+    &:hover{
+      opacity: .5;
+    }
+  }
+  &__product-card{
+    display: none;
+  }
+  &_tile{
+    .list__head{
+      display: none;
+    }
+    .list__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .list__product-card{
+      display: block;
+      width: 100%;
+      max-width: calc(50% -  2px);
+      height: 420px;
+      margin-bottom: 5px;
+      &:hover{
+        height: auto;
+      }
+    }
+    .list__item{
+      display: none;
+    }
+  }
+}

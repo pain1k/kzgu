@@ -42,6 +42,9 @@
     transition: .3s all;
     background: #F0F3F7;
     padding: 10px;
+    &_small{
+      height: 420px;
+    }
   }
   &:hover{
     .product-card__inner{
@@ -49,6 +52,7 @@
       height: auto;
       overflow: unset;
       z-index: 33;
+      width: 100%;
     }
   }
 }

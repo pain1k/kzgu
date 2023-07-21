@@ -1,0 +1,14 @@
+.catalogue{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -4px;
+    margin-top: 40px;
+  }
+  &__item{
+    width: 100%;
+    max-width: calc(50% - 2px);
+    margin-bottom: 4px;
+  }
+}
